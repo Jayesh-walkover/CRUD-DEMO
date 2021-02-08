@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Intern;
-use App\Http\Requests\storeinternrqst;
+use App\Http\Requests\StoreInternRequest;
 
-class internController extends Controller
+class InternController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class internController extends Controller
     public function index()
     {
         $interns = Intern::all();
-        return view('read', compact('interns'));
+        return view('Dashboard', compact('interns'));
     }
 
     /**
@@ -26,8 +26,9 @@ class internController extends Controller
      */
     public function create()
     {
-        return view('wel');
+        return view('Create');
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +36,7 @@ class internController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(storeinternrqst $request)
+    public function store(StoreInternRequest $request)
     {
         $intern = Intern::create([
             'first_name' => $request->get('first_name'),
@@ -64,7 +65,7 @@ class internController extends Controller
     public function edit($id)
     {
         $intern= Intern::find($id);
-        return view('upd', ['data' => $intern , 'id' => $id]);
+        return view('Update', ['data' => $intern , 'id' => $id]);
     }
 
     /**

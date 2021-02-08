@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class storeinternrqst extends FormRequest
+class StoreInternRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -32,7 +32,7 @@ class storeinternrqst extends FormRequest
     public function messages()
 {
     return [
-        'first_name.required' => 'PLease Mentioun your First Name',
+        'first_name.required' => 'Please Mentioun your First Name',
         'last_name.required' => 'Last name field is required',
     ];
 }
