@@ -6,12 +6,14 @@
 <br>
 <br>
 <br>
-<strong>Validations:</strong> First name & Last Name both are required.
+<strong>Validations:</strong><br>
+<ul>	
+	<li><strong>first_name:</strong> required</li>
+	<li><strong>last_name:</strong> required</li>
+</ul>
 <br>
 <br>
 <br>
-
-<strong>Customized messages</strong>Returns from a messages functions of StoreInternRequest.
 
 </p>
 

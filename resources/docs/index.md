@@ -24,9 +24,9 @@ toc_footers:
 
 
 <strong>Laravel version 8.12</strong>
-This documentation aims to provide all the information about CRUD Application on Intern model in Laravel.
+This documentation aims to provide all the information about CRUD application in Laravel.
 
-<aside>As you scroll,you'll see the models,conrtollers,Form- Requests and Different routes of the Application.</aside>
+<aside>As you scroll,you'll see the models,conrtollers,form- requests and different routes of the application.</aside>
 
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
 <script>

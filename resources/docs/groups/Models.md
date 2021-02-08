@@ -1,8 +1,8 @@
 # Models
 
-<p>Models which are Created in this Application are as follow:-</p>
+<p>Models which are created in this application are as follow:-</p>
 
-## Interns
+## Intern
 
 <table>
 	<tr>
@@ -18,13 +18,13 @@
 		<td>Primary Key</td>
 	</tr>
 	<tr>
-		<td>First_name </td>
+		<td>first_name </td>
 		<td>varchar(255)</td>
 		<td>None</td>
 		<td>-</td>
 	</tr>
 	<tr>
-		<td>Last_name </td>
+		<td>last_name </td>
 		<td>varchar(255)</td>
 		<td>None</td>
 		<td>-</td>

@@ -1,7 +1,7 @@
 # Intern Management Routes
 
 
-## All Interns.
+## Get all interns.
 
 
 > Example request:
@@ -59,8 +59,8 @@ tr:nth-child(even) {
 </style>
 
    <body>
-          <h1>Details of Interns</h1> 
-   <h3><a href =intern/create>Add</a></h3> 
+    <h1>Details of Interns</h1> 
+    <h3><a href =intern/create>Add</a></h3> 
     <br>
     <br>
     <div>
@@ -71,19 +71,19 @@ tr:nth-child(even) {
         <th>Edit</th>
         <th>Delete</th>
         </tr>
-                   <tr>
-              <td>sup</td>
-              <td>herokn</td>
-              <td><a href ="http://example.test/intern/2/edit">Edit</a></td>
-              <td>
-                <form method="post" action = "http://example.test/intern/2" >
-                   <input type="hidden" name="_method" value="DELETE">
-                    <input type="hidden" name="_token" value="XETcgmXAMVhwFVhYt1ASLl2iHOb5pdzmWkyppCEd">
-                  <button>Delete</button>
-                </form>
-              </td>
+          <tr>
+            <td>sup</td>
+            <td>herokn</td>
+            <td><a href ="http://example.test/intern/2/edit">Edit</a></td>
+            <td>
+              <form method="post" action = "http://example.test/intern/2" >
+                  <input type="hidden" name="_method" value="DELETE">
+                  <input type="hidden" name="_token" value="XETcgmXAMVhwFVhYt1ASLl2iHOb5pdzmWkyppCEd">
+                <button>Delete</button>
+              </form>
+            </td>
           </tr>
-                  <tr>
+          <tr>
               <td>john</td>
               <td>doe</td>
               <td><a href ="http://example.test/intern/3/edit">Edit</a></td>
@@ -95,7 +95,7 @@ tr:nth-child(even) {
                 </form>
               </td>
           </tr>
-                  <tr>
+          <tr>
               <td>boomer</td>
               <td>singh</td>
               <td><a href ="http://example.test/intern/5/edit">Edit</a></td>
@@ -107,7 +107,7 @@ tr:nth-child(even) {
                 </form>
               </td>
           </tr>
-                  <tr>
+          <tr>
               <td>pole</td>
               <td>pole</td>
               <td><a href ="http://example.test/intern/6/edit">Edit</a></td>
@@ -119,7 +119,7 @@ tr:nth-child(even) {
                 </form>
               </td>
           </tr>
-                  <tr>
+          <tr>
               <td>john</td>
               <td>ram</td>
               <td><a href ="http://example.test/intern/8/edit">Edit</a></td>
@@ -131,7 +131,7 @@ tr:nth-child(even) {
                 </form>
               </td>
           </tr>
-                  <tr>
+          <tr>
               <td>real</td>
               <td>entry</td>
               <td><a href ="http://example.test/intern/11/edit">Edit</a></td>
@@ -143,12 +143,8 @@ tr:nth-child(even) {
                 </form>
               </td>
           </tr>
-           
-         
-    </table>
-
+     </table>
     </div>
-     
    </body>
 </html>
 ```
@@ -162,7 +158,7 @@ tr:nth-child(even) {
 </div>
 <form id="form-GETintern" data-method="GET" data-path="intern" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETintern', this);">
 <p>
-This Page shows the Tabular representation of Intern's First & last Name with<br>Edit and Delete Buttons.<br></p>  
+This page shows the tabular representation of intern's first & last name with<br>edit and delete buttons.<br></p>  
 <h3>
     Request&nbsp;&nbsp;&nbsp;
     <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETintern" onclick="cancelTryOut('GETintern');" hidden>Cancel</button>&nbsp;&nbsp;
@@ -257,7 +253,6 @@ input[type=submit]:hover {
      
       <form action = "http://example.test/intern" method = "post">
          <input type = "hidden" name = "_token" value = "XETcgmXAMVhwFVhYt1ASLl2iHOb5pdzmWkyppCEd">
-      
          <table>
             <tr>
                <td>First Name</td>
@@ -267,13 +262,11 @@ input[type=submit]:hover {
                <td>Last Name</td>
                <td><input type = "text" name = "last_name" /></td>
             </tr>
-           
                <td colspan = "2" align = "center">
                   <input type = "submit" value = "Register" />
                </td>
             </tr>
          </table>
-      
       </form>
    </body>
 </html>
@@ -287,7 +280,7 @@ input[type=submit]:hover {
     <pre><code id="execution-error-message-GETintern-create"></code></pre>
 </div>
 <form id="form-GETintern-create" data-method="GET" data-path="intern/create" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETintern-create', this);">
-<p>This Page has Form for Creation of new Intern.<br></p>  
+<p>This page has form for creation of new intern.<br></p>  
 <h3>
     Request&nbsp;&nbsp;&nbsp;
     <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETintern-create" onclick="cancelTryOut('GETintern-create');" hidden>Cancel</button>&nbsp;&nbsp;
@@ -301,7 +294,7 @@ input[type=submit]:hover {
 </form>
 
 
-## Store a newly created Intern.
+## Store a newly created intern.
 
 
 
@@ -349,7 +342,7 @@ fetch(url, {
     <pre><code id="execution-error-message-POSTintern"></code></pre>
 </div>
 <form id="form-POSTintern" data-method="POST" data-path="intern" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTintern', this);">
-<p>It is a Post method for Storing the data into Databse.<br></p>  
+<p>It is a post method for storing the data into database.<br></p>  
 <h3>
     Request&nbsp;&nbsp;&nbsp;
     <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTintern" onclick="cancelTryOut('POSTintern');" hidden>Cancel</button>&nbsp;&nbsp;
@@ -375,7 +368,7 @@ fetch(url, {
 </form>
 
 
-## Update Intern Details.
+## Update intern details.
 
 
 
@@ -383,7 +376,7 @@ fetch(url, {
 > Example request:
 
 ```bash
-curl -X PUT \
+curl -X PATCH \
     "http://example.test/intern/consectetur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
@@ -401,7 +394,7 @@ let headers = {
 
 
 fetch(url, {
-    method: "PUT",
+    method: "PATCH",
     headers,
 }).then(response => response.json());
 ```
@@ -416,7 +409,7 @@ fetch(url, {
     <pre><code id="execution-error-message-PUTintern--intern-"></code></pre>
 </div>
 <form id="form-PUTintern--intern-" data-method="PUT" data-path="intern/{intern}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTintern--intern-', this);">
-<p>Method to Update the details of Intern.<br></p>  
+<p>Method to update the details of intern.<br></p>  
 <h3>
     Request&nbsp;&nbsp;&nbsp;
     <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTintern--intern-" onclick="cancelTryOut('PUTintern--intern-');" hidden>Cancel</button>&nbsp;&nbsp;
@@ -424,9 +417,6 @@ fetch(url, {
     </h3>
 <p>
 
-<small class="badge badge-darkblue">PUT</small>
- <b><code>intern/{id}</code></b>
-</p>
 <p>
 <small class="badge badge-purple">PATCH</small>
  <b><code>intern/{id}</code></b>
@@ -484,7 +474,7 @@ fetch(url, {
 </div>
 <form id="form-DELETEintern--intern-" data-method="DELETE" data-path="intern/{intern}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEintern--intern-', this);">
   <p>
-  Soft Deletes the Entry from Database<br>
+   Deletes the entry from database<br>
 </p>
 <h3>
     Request&nbsp;&nbsp;&nbsp;
